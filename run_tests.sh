@@ -22,4 +22,3 @@ done
 if [ "$failed" = "true" ]; then
     exit 2
 fi
-
