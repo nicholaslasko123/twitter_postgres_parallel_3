@@ -1,5 +1,3 @@
-# Parallel Twitter in Postgres
-
 |     | sequential | parallel |
 | --- | ---------- | -------- |
 | normalized (unbatched) | ![](https://github.com/nicholaslasko123/twitter_postgres_parallel_3/workflows/tests_normalized_sequential/badge.svg) | ![](https://github.com/nicholaslasko123/twitter_postgres_parallel_3/workflows/tests_normalized_parallel/badge.svg) |
@@ -280,9 +278,9 @@ Ensure that your runtimes on the lambda server are recorded below.
 
 |                        | elapsed time (sequential) | elapsed time (parallel)   |
 | -----------------------| ------------------------- | ------------------------- |
-| `pg_normalized`        |       3m28.97s            |    43.65s                 | 
-| `pg_normalized_batch`  |     1m9.57s               |         29.11s            | 
-| `pg_denormalized`      |      0m21.59s             |              4.82s        | 
+| `pg_normalized`        |       1m8.27s             |    9.28s                  | 
+| `pg_normalized_batch`  |       27.77s              |         4.47s             | 
+| `pg_denormalized`      |        19.69s             |              03.29s       | 
 
 Then upload a link to your forked github repo on sakai.
 
